@@ -1,0 +1,32 @@
+baseURL = "https://lukasmatuska.cz/"
+languageCode = "cs-cz"
+defaultContentLanguage = "cs-cz"
+title = "Lukáš Matuška"
+theme = "hallo"
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
+[Author]
+    name = "Lukáš Matuška"
+# summaryLength = 30
+[params]
+    siteURL = "https://lukasmatuska.cz"
+    lang = "cs"
+    locale = "cs_CZ"
+    # gatag = ""
+    greeting = "Backend developer?"
+    [[params.links]]
+        icon = "github"
+        title = "GitHub"
+        url = "https://github.com/lukynmatuska/"
+    [[params.links]]
+        iconset = "fas"
+        icon = "envelope"
+        title = "E-mail"
+        url = "mailto:matuska.lukas@lukasmatuska.cz"
+    [params.colors]
+        background = "#000"
+        foreground = "#edf7ff"
+        hover = "#4c4c4c"
+    [[params.links]]
+        icon = "twitter"
+        title = "Twitter"
+        url = "https://twitter.com/lukynmatuska"
