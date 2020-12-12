@@ -1,0 +1,86 @@
+html, body {
+  margin: 0px !important;
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  background-color: transparent;
+}
+
+main .block.introduction {
+  margin-top: 10vh;
+  min-height: calc(100vh - 30vh);
+}
+
+main .column.right {
+  margin: 15px;
+  text-align: left;
+}
+
+main .column.right h1 {
+  margin: 0px;
+}
+
+main.o-main {
+  text-align: center;
+}
+
+main.o-main h2 {
+  font-size: 3.5rem;
+}
+
+main.o-main p {
+  font-size: 1.5rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.o-header {
+  width: 95%;
+  max-width: 700px;
+  padding: 1rem;
+  margin: auto;
+  /* margin: 1rem auto 0 auto; */
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.o-nav__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  background-color: transparent;
+  width: 100%;
+  padding: 0px;
+}
+
+.o-nav__item {
+  width: 100%;
+  margin: 0.25rem;
+  max-width: 150px;
+}
+
+.o-nav__link {
+  text-decoration: none;
+  padding: 0.75rem 0;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  color: rgba(255, 255, 255, .75);
+  transition: 0.3s ease background-color, 0.3s ease color;
+}
+
+.o-nav__link:hover, .o-nav__link--active {
+  background-color: #fff;
+  color: #000;
+}
