@@ -1,18 +1,18 @@
-baseURL = "https://lukasmatuska.cz/"
+baseURL = "/"
 languageCode = "cs-cz"
 defaultContentLanguage = "cs-cz"
 title = "Lukáš Matuška"
 theme = "hallo"
-disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 [Author]
-    name = "Lukáš Matuška"
+    name = "Backend developer"
 # summaryLength = 30
 [params]
     siteURL = "https://lukasmatuska.cz"
     lang = "cs"
     locale = "cs_CZ"
     # gatag = ""
-    greeting = "Backend developer?"
+    greeting = "Lukáš Matuška"
     [[params.links]]
         icon = "github"
         title = "GitHub"
@@ -30,3 +30,8 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
         icon = "twitter"
         title = "Twitter"
         url = "https://twitter.com/lukynmatuska"
+    [[params.links]]
+        iconset = "fas"
+        icon = "briefcase"
+        title = "Projekty"
+        url = "/projects"
