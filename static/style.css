@@ -12,6 +12,20 @@ body {
   background-color: transparent;
 }
 
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 15vw;
+  }
+
+  h2 {
+    font-size: 12vw !important;
+  }
+
+  main.o-main p {
+    margin: 0 10vw 0 10vw !important;
+  }
+}
+
 main .block.introduction {
   margin-top: 10vh;
   min-height: calc(100vh - 30vh);
@@ -36,12 +50,20 @@ main.o-main h2 {
 
 main.o-main p {
   font-size: 1.5rem;
+  text-align: justify;
+  margin: 0 15vw 0 15vw;
 }
 
 footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+
+footer p {
+  margin: auto;
 }
 
 .o-header {
