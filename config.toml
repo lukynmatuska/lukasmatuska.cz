@@ -8,6 +8,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     name = "Backend developer"
 # summaryLength = 30
 [params]
+    description = "Backend developer"
     siteURL = "https://lukasmatuska.cz"
     lang = "cs"
     locale = "cs_CZ"
