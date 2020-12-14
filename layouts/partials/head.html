@@ -19,9 +19,13 @@
     {{- $inServerMode	:= .Site.IsServer }}
     {{- $cssTarget		:= "css/style.css" }}
     {{- $cssOptions		:= cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
-    {{- $style			:= resources.Get "scss/hallo.scss" | resources.ExecuteAsTemplate "style.hallo.scss" . | toCSS $cssOptions }}
+    {{- $style			:= resources.Get "scss/hallo.scss" | resources.ExecuteAsTemplate "style.hallo.scss" . | toCSS $cssOptions | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    <link rel="stylesheet" href="/style.css">
+
+    <!-- My CSS -->
+    {{ $style := resources.Get "style.css" }}
+    {{ $style = $style | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
     <!-- Montserrat -->
     <!-- <link rel="preload" href="/fonts/montserrat/JTURjIg1_i6t8kCHKm45_dJE3g3D_vx3rCubqg.woff2" as="font" type="font/woff2" crossorigin>
@@ -36,7 +40,10 @@
     <link rel="preload" href="/fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf" as="font" type="font/ttf" crossorigin>
     <!--<link rel="preload" href="/fonts/montserrat/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/montserrat/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2" as="font" type="font/woff2" crossorigin> -->
-    <link rel="stylesheet" href="/fonts/montserrat/montserrat.css">
+    {{ $style := resources.Get "fonts/montserrat/montserrat.css" }}
+    {{ $style = $style | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{/*  <link rel="stylesheet" href="/fonts/montserrat/montserrat.css">  */}}
     
     <!-- Academicons -->
     <!-- <link rel="preload" href="/fonts/academicons/fonts/academicons.ttf" as="font" type="font/ttf" crossorigin>
