@@ -4,7 +4,7 @@ description: What I have done?
 ---
 
 ## Fairytale Forest
-My first web application in [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.com/). It was made with my heart for event wich is organized by association called [Rudická mládež](https://rudickamladez.cz). There was a problem with people overflow when the when the event starts. Because the capacity is limited by [Wind Mill in Rudice](http://www.rudice.cz/index.php?page=informacni-stredisko) a počtem dětí v jedné skupince, ale nyní je díky vstupenek rezervovaných z pohodlí domova a vhodného načasování je průběh akce bez velkých front. [Official websites](https://pohles.rudickamladez.cz/)
+My first web application in [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.com/). It was made with my heart for event wich is organized by association called [Rudická mládež](https://rudickamladez.cz). There was a problem with people overflow when the when the event starts. Because the capacity is limited by [Wind Mill in Rudice](http://www.rudice.cz/index.php?page=informacni-stredisko) Now my web application is solving everything. [Official websites](https://pohles.rudickamladez.cz/)
 
 ## St. Nicholas afternoon
 Another web application wich I created in [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.com/) and made for [Rudická mládež](https://rudickamladez.cz). I fixed the workload of the reservations, because previously it was possible to order children for this small village event *only* by phone or email. Now my web application is solving everything. [Official websites](https://mikulas.rudickamladez.cz/)
