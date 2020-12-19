@@ -114,7 +114,7 @@ footer p {
   transition: 0.3s ease background-color, 0.3s ease color;
 }
 
-.o-nav__list .active, .o-nav__link:hover, .o-nav__link--active {
+.o-nav__item .active, .o-nav__link:hover, .o-nav__link--active {
   background-color: #fff;
   color: #000;
 }
