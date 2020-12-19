@@ -1,18 +1,44 @@
 <header class="o-header">
     <nav class="o-nav">
         <ul class="o-nav__list">
-            <li class="o-nav__item">
-                <a href="/" class="o-nav__link">Domů</a>
+            {{- $currentPage := . -}}
+            {{ range .Site.Menus.main -}}
+            <li class="o-nav__item{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+                <a class="o-nav__link" href="{{ .URL | absLangURL }}">
+                    {{ .Name }}
+                </a>
             </li>
-            <li class="o-nav__item">
-                <a href="/projects/" class="o-nav__link">Projekty</a>
-            </li>
-            <!-- <li class="o-nav__item">
-                <a href="/blog/" class="o-nav__link">Blog</a>
-            </li> -->
-            <!-- <li class="o-nav__item">
-                <a href="/kontakt/" class="o-nav__link">Kontakt</a>
-            </li> -->
+            {{- end }}
         </ul>
     </nav>
+    <div class="language-list">
+        {{ if .Site.IsMultiLingual }}
+            {{/*  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i></a>  */}}
+            <ul class="o-nav__list">
+            {{ $siteLanguages := .Site.Languages}}
+            {{ $pageLang := .Page.Lang}}
+            {{ range .Page.AllTranslations }}
+                {{ $translation := .}}
+                {{ range $siteLanguages }}
+                    {{ if eq $translation.Lang .Lang }}
+                        {{ $selected := false }}
+                        {{ if eq $pageLang .Lang}}
+                            <li class="o-nav__item">
+                                <a class="o-nav__link active" href="{{ $translation.URL }}">
+                                    {{ .LanguageName }}
+                                </a>
+                            </li>
+                        {{ else }}
+                            <li class="o-nav__item">
+                                <a class="o-nav__link" href="{{ $translation.URL }}">
+                                    {{ .LanguageName }}
+                                </a>
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            </ul>
+        {{ end }}
+    </div>
 </header>

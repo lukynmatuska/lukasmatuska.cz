@@ -1,14 +1,51 @@
 baseURL = "/"
-languageCode = "cs-cz"
-defaultContentLanguage = "cs-cz"
+defaultContentLanguage = "cs"
+defaultContentLanguageInSubdir = true
 title = "Lukáš Matuška"
 theme = "hallo"
 disableKinds = ["taxonomy", "taxonomyTerm"]
-[Author]
-    name = "Backend developer"
+[languages]
+  [languages.cs]
+    weight = 0
+    languageName = "Čeština"
+    [languages.cs.menu]
+        [[languages.cs.menu.main]]
+            url    = "/cs/projects"
+            name   = "Projekty"
+        [[languages.cs.menu.main]]
+            url    = "/cs/"
+            name   = "Domů"
+        # [[languages.cs.menu.main]]
+        #     url    = "/en/contact/"
+        #     name   = "Kontakt"
+        # [[languages.cs.menu.main]]
+        #     url    = "/cs/blog/"
+        #     name   = "Blog"
+    [languages.cs.Author]
+        name = "Lukáš Matuška"
+        description = "Backend developer"
+  [languages.en]
+    weight = 1
+    languageName = "English"
+    [languages.en.menu]
+        [[languages.en.menu.main]]
+            url    = "/en/projects"
+            name   = "Projects"
+        [[languages.en.menu.main]]
+            url    = "/en/"
+            name   = "Home"
+        # [[languages.en.menu.main]]
+        #     url    = "/en/contact/"
+        #     name   = "Contact"
+        # [[languages.en.menu.main]]
+        #     url    = "/en/blog/"
+        #     name   = "Blog"
+    [languages.en.Author]
+        name = "Lukas Matuska"
+        description = "Backend developer"
 # summaryLength = 30
 [params]
-    description = "Backend developer"
+    description = "My personal website"
     siteURL = "https://lukasmatuska.cz"
     lang = "cs"
     locale = "cs_CZ"
