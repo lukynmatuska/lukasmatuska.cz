@@ -4,18 +4,13 @@
     <div class="block introduction">
         <div class="column left">
             <picture>
-                <source srcset="images/portrait.webp" type="image/webp">
-                <img src="images/portrait.jpg" width="100%" height="100%" class="portrait" alt="Portrait" />
+                <source srcset="/images/portrait.webp" type="image/webp">
+                <img src="/images/portrait.jpg" width="100%" height="100%" class="portrait" alt="Portrait" />
             </picture>
         </div>
         <div class="column right">
-            {{- with .Param "greeting" -}}
-                <h1>{{ . }}</h1>
-            {{- else -}}
-                <h1>{{ i18n "hello" }}.</h1>
-            {{- end -}}
-            <h2>{{ i18n "i-am" }} {{ .Site.Author.name | default "Hallo" }}.</h2>
-            <p>{{- partial "introduction.html" . -}}</p>
+            <h1>{{ .Site.Author.name }}</h1>
+            <h2>{{ .Site.Author.description }}</h2>
 
             <div class="links">
                 {{- range .Site.Params.links -}}
@@ -26,15 +21,6 @@
             </div>
         </div>
     </div>
-
-    {{- if (fileExists "layouts/partials/content.html") -}}
-        <div class="block">
-            <div class="column left"></div>
-            <div class="column right">
-                {{- partial "content.html" . -}}
-            </div>
-        </div>
-    {{- end -}}
 </main>
 
 {{ end }}
