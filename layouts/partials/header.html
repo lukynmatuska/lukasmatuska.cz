@@ -3,7 +3,7 @@
         <ul class="o-nav__list">
             {{- $currentPage := . -}}
             {{ range .Site.Menus.main -}}
-            <li class="o-nav__item{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+            <li class="o-nav__item">
                 <a class="o-nav__link" href="{{ .URL | absLangURL }}">
                     {{ .Name }}
                 </a>
@@ -13,7 +13,6 @@
     </nav>
     <div class="language-list">
         {{ if .Site.IsMultiLingual }}
-            {{/*  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i></a>  */}}
             <ul class="o-nav__list">
             {{ $siteLanguages := .Site.Languages}}
             {{ $pageLang := .Page.Lang}}
