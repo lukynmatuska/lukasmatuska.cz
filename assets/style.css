@@ -89,6 +89,11 @@ main.home .links {
 main.home .links a,
 main.home .links span {
   color: #fff;
+  margin-right: .125rem;
+}
+
+main.home .links span:last-child {
+  margin-right: 0;
 }
 
 main.notfound a {
