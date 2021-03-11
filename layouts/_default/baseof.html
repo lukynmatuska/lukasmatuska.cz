@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="{{ .Site.Language.Lang }}">
 {{ partial "head" . }}
 
 <body>
     {{ partial "header" . }}
-    <main class="o-main">
-        {{ block "main" . }}{{ end }}
-    </main>
+    {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
 </body>
 

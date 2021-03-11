@@ -2,7 +2,6 @@ baseURL = "/"
 defaultContentLanguage = "cs"
 defaultContentLanguageInSubdir = true
 title = "Lukáš Matuška"
-theme = "hallo"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 [languages]
   [languages.cs]
@@ -10,47 +9,42 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     languageName = "Čeština"
     [languages.cs.menu]
         [[languages.cs.menu.main]]
-            url    = "/cs/projects"
-            name   = "Projekty"
-        [[languages.cs.menu.main]]
             url    = "/cs/"
             name   = "Domů"
+            weight = 1
+        [[languages.cs.menu.main]]
+            url    = "/cs/projects"
+            name   = "Projekty"
+            weight = 2
         # [[languages.cs.menu.main]]
-        #     url    = "/en/contact/"
-        #     name   = "Kontakt"
+            # url    = "/cs/contact/"
+            # name   = "Kontakt"
+            # weight = 3
         # [[languages.cs.menu.main]]
-        #     url    = "/cs/blog/"
-        #     name   = "Blog"
-    [languages.cs.Author]
-        name = "Lukáš Matuška"
-        description = "Backend developer"
+            # url    = "/cs/blog/"
+            # name   = "Blog"
+            # weight = 4
   [languages.en]
     weight = 1
     languageName = "English"
     [languages.en.menu]
         [[languages.en.menu.main]]
-            url    = "/en/projects"
-            name   = "Projects"
-        [[languages.en.menu.main]]
             url    = "/en/"
             name   = "Home"
+            weight = 1
+        [[languages.en.menu.main]]
+            url    = "/en/projects"
+            name   = "Projects"
+            weight = 2
         # [[languages.en.menu.main]]
-        #     url    = "/en/contact/"
-        #     name   = "Contact"
+            # url    = "/en/contact/"
+            # name   = "Contact"
+            # weight = 3
         # [[languages.en.menu.main]]
-        #     url    = "/en/blog/"
-        #     name   = "Blog"
-    [languages.en.Author]
-        name = "Lukas Matuska"
-        description = "Backend developer"
-# summaryLength = 30
+            # url    = "/en/blog/"
+            # name   = "Blog"
+            # weight = 4
 [params]
-    description = "My personal website"
-    siteURL = "https://lukasmatuska.cz"
-    lang = "cs"
-    locale = "cs_CZ"
-    # gatag = ""
-    greeting = "Lukáš Matuška"
     [[params.links]]
         icon = "gitlab"
         title = "GitLab"
