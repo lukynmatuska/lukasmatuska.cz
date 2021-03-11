@@ -48,7 +48,8 @@ p a {
   border-bottom: 1px solid #fff !important;
 }
 
-main.home {
+main.home,
+main.notfound {
   flex-grow: 1;
   margin: 0px;
   background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.65) 59%), url(/images/portrait.webp) center center;
@@ -64,6 +65,12 @@ main.home h1, main.notfound h1 {
   margin-bottom: 0px;
   font-size: 4.5rem;
   text-shadow: 5px 5px 16px #000;
+}
+
+@media only screen and (max-width: 600px) {
+  main.home p, main.notfound p {
+      max-width: 85%;
+  }
 }
 
 main.home p, main.notfound p {
@@ -89,46 +96,21 @@ main.home .links {
 main.home .links a,
 main.home .links span {
   color: #fff;
-  margin-right: .125rem;
+  margin-right: .25rem;
 }
 
 main.home .links span:last-child {
   margin-right: 0;
 }
 
+main.notfound {
+  background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.65) 59%), url(/images/erik-mclean-bGWVhFY1gH0-unsplash.jpg) center center;
+}
+
 main.notfound a {
   text-decoration: none;
   border-bottom: 1px solid #fff;
-  /* color: #fff; */
-}
-
-/* .dark main.home a,
-.dark main.notfound a {
-  color: #000 !important;
-} */
-
-main.notfound {
-  flex-grow: 1;
-  margin: 0px;
-  background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.65) 59%), url(/images/erik-mclean-bGWVhFY1gH0-unsplash.jpg) center center;
-  background-size: cover;
-  /* color: #fff; */
-  display: flex;
-  flex-direction: column;
-}
-
-/* .dark main.notfound {
-  color: #000 !important;
-} */
-
-main.notfound a {
   color: #fff;
-}
-
-@media only screen and (max-width: 600px) {
-  main.home p, main.notfound p {
-      max-width: 85%;
-  }
 }
 
 .o-header {
@@ -296,14 +278,12 @@ h2.c-bloglist__heading {
   top: 0;
   right: 0;
   width: initial;
-  /* background-color: red; */
   display: flex;
   justify-content: flex-end;
   margin: auto;
 }
 
 .language-nav .o-nav__link {
-  /* background-color: purple; */
   padding: .75rem .5rem;
   color: #777;
 }
