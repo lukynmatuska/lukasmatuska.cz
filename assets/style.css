@@ -37,13 +37,27 @@ p {
   font-size: 1.25rem;
 }
 
-p a {
+p a,
+.o-footer a {
   text-decoration: none;
   border-bottom: 1px solid #000;
   color: #000;
 }
 
-.dark p a {
+.dark p a:visited,
+.dark p a:active,
+.dark p a:hover
+p a:visited,
+p a:active,
+p a:hover {
+  color: #777 !important;
+  background-color: transparent;
+  border-bottom: 2px solid #777 !important;
+  text-decoration: none;
+}
+
+.dark p a,
+.dark .o-footer a {
   color: #fff !important;
   border-bottom: 1px solid #fff !important;
 }
@@ -52,12 +66,19 @@ main.home,
 main.notfound {
   flex-grow: 1;
   margin: 0px;
-  background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.65) 59%), url(/images/portrait.webp) center center;
-  background-size: cover;
+  background-size: cover !important;
   color: #fff;
   display: flex;
   flex-direction: column;
   font-size: 1.75rem;
+}
+
+main.home {
+  background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.65) 59%), url(/images/portrait.webp) center center;
+}
+
+main.notfound {
+  background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.65) 59%), url(/images/erik-mclean-bGWVhFY1gH0-unsplash.webp) center center;
 }
 
 main.home h1, main.notfound h1 {
@@ -65,6 +86,13 @@ main.home h1, main.notfound h1 {
   margin-bottom: 0px;
   font-size: 4.5rem;
   text-shadow: 5px 5px 16px #000;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media only screen and (max-width: 600px) {
@@ -74,17 +102,20 @@ main.home h1, main.notfound h1 {
 }
 
 main.home p, main.notfound p {
-  margin: auto;
-  margin-top: 0px;
+  margin: 5px auto;
   max-width: 75%;
   text-shadow: 2px 2px 5px #000;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
-main.home p {
-  margin: 0 auto;
-  margin-top: 0px;
-  max-width: 75%;
-  text-shadow: 2px 2px 5px #000;
+main.notfound p {
+  margin: 5px auto auto auto;
 }
 
 main.home .links {
@@ -101,10 +132,6 @@ main.home .links span {
 
 main.home .links span:last-child {
   margin-right: 0;
-}
-
-main.notfound {
-  background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.65) 59%), url(/images/erik-mclean-bGWVhFY1gH0-unsplash.jpg) center center;
 }
 
 main.notfound a {
