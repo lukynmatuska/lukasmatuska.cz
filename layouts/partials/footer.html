@@ -1,8 +1,5 @@
-<footer>
-    <p>
-        &copy; Copyright 2020 &nbsp;
-        <a href="//lukasmatuska.cz">
-            Lukáš Matuška
-        </a>
-    </p>
+<footer class="o-footer">
+    &#169; Copyright {{ dateFormat "2006" now }} Lukáš Matuška
 </footer>
+{{ $darkmode := resources.Get "js/darkmode.js" | minify }}
+<script src="{{ $darkmode.RelPermalink }}"></script>

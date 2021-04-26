@@ -1,0 +1,15 @@
+[homeTitle]
+other = "Lukáš Matuška"
+
+[homeDescription]
+other = "Backend developer"
+
+[wordCount]
+other = "This article has {{ .WordCount }} words."
+
+[readingTime]
+one = "One minute to read"
+other = "{{.Count}} minutes to read"
+
+[readArticle]
+other = "Read article"

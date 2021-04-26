@@ -1,0 +1,12 @@
+[homeTitle]
+other = "Lukáš Matuška"
+
+[homeDescription]
+other = "Vývojář nejen webových aplikací"
+
+[readingTime]
+one = "Minuta čtení"
+other = "{{.Count}} minut čtení"
+
+[readArticle]
+other = "Číst článek"
