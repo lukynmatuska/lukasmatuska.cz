@@ -20,6 +20,7 @@ Více detailů na stránkách [cermatu](https://maturita.cermat.cz/).
 Skládá se ze tří částí, těmi jsou dva předměty, konkrétně _Programování a databáze_ a _Počítačové sítě a Technické vybavení_. Další složkou maturitní zkoušky v tomto roce je _obhajoba mautritní práce_.
 
 ## Moje vypracování
-Na své maturitní práci jsem začal pracovat už ve třetím ročníku, kdy jsem si zvolil tento projekt jako týmovou práci. Ze začátku jsme práci dělali dva, ale později mne kolega opustil, takže jsem celou práci dodělával sám. Protože mě téma týmových prací u nás na škole bavilo.
-
+Na své maturitní práci jsem začal pracovat už ve třetím ročníku, kdy jsem si zvolil tento projekt jako týmovou práci. Ze začátku jsme na práci pracovali dva, ale později mne kolega opustil, takže jsem celou práci vypracoval sám. Protože mě téma týmových prací u nás na škole bavilo, rozhodl jsem se si vzít tento projekt až k obhajobě u maturity, kde jsem uspěl na _výbornou_.
+\
+\
 Dne 17. 5. 2021 jsem si na založil [repozitář](https://github.com/lukynmatuska/maturita-questions), kam jsem začal vkládat moje vypracování mautritních otázek do předmětu _Programování a databáze_.
