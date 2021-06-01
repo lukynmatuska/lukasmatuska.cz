@@ -1,0 +1,7 @@
+{{ define "main" }}
+<main class="o-main">
+    <h1>{{ .Title }}</h1>
+    <p>Celá maturitní otázka zní <i>{{ .Params.fullname }}</i>.</p>
+    {{ .Content }}
+</main>
+{{ end }}

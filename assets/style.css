@@ -42,6 +42,7 @@ p {
   font-size: 1.25rem;
 }
 
+.o-main a,
 p a,
 .o-footer a {
   text-decoration: none;
@@ -49,6 +50,9 @@ p a,
   color: #000;
 }
 
+.o-main a:visited,
+.o-main a:active,
+.o-main a:hover,
 .dark p a:visited,
 .dark p a:active,
 .dark p a:hover
@@ -61,6 +65,7 @@ p a:hover {
   text-decoration: none;
 }
 
+.dark .o-main a,
 .dark p a,
 .dark .o-footer a {
   color: #fff !important;
@@ -145,6 +150,10 @@ main.notfound a {
   color: #fff;
 }
 
+ul, ol {
+  margin-left: 2rem;
+}
+
 .o-header {
   width: 100%;
   margin: 0;
@@ -223,7 +232,7 @@ main.notfound a {
 
 .o-main {
   width: 95%;
-  max-width: 700px;
+  max-width: 999px;
   padding: 1rem;
   margin: auto;
   margin-top: 1rem;
