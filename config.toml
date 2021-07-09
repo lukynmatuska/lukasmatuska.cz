@@ -70,3 +70,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         icon = "instagram"
         title = "Instagram"
         url = "https://instagram.com/lukynmatuska"
+    [[params.links]]
+        icon = "facebook"
+        title = "Facebook"
+        url = "https://www.facebook.com/lukyn.matuska"
