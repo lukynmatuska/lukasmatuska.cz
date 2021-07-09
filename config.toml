@@ -74,3 +74,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         icon = "facebook"
         title = "Facebook"
         url = "https://www.facebook.com/lukyn.matuska"
+    [[params.links]]
+        icon = "phone"
+        title = "Phone"
+        iconset = "fas"
+        url = "tel:604192783"
