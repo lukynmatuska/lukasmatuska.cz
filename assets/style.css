@@ -137,7 +137,12 @@ main.home .links {
 main.home .links a,
 main.home .links span {
   color: #fff;
-  margin-right: .25rem;
+  margin-right: .4rem;
+}
+
+main.home .links a:hover,
+main.home .links span:hover {
+  color: rgba(102, 102, 102, 0.65);
 }
 
 main.home .links span:last-child {
