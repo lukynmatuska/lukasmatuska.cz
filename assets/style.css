@@ -143,7 +143,7 @@ main.home .links {
 main.home .links a,
 main.home .links span {
   color: #fff;
-  /* margin-right: .4rem; */
+  margin-right: .4rem;
 }
 
 main.home .links a:hover,
