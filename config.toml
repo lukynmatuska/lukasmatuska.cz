@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://lukasmatuska.cz"
 defaultContentLanguage = "cs"
 defaultContentLanguageInSubdir = true
 title = "Lukáš Matuška"
@@ -7,44 +7,16 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   [languages.cs]
     weight = 0
     languageName = "Čeština"
-    [languages.cs.menu]
-        [[languages.cs.menu.main]]
-            url    = "/cs/"
-            name   = "Domů"
-            weight = 1
-        [[languages.cs.menu.main]]
-            url    = "/cs/projects"
-            name   = "Projekty"
-            weight = 2
-        # [[languages.cs.menu.main]]
-            # url    = "/cs/contact/"
-            # name   = "Kontakt"
-            # weight = 3
-        # [[languages.cs.menu.main]]
-            # url    = "/cs/blog/"
-            # name   = "Blog"
-            # weight = 4
-  [languages.en]
-    weight = 1
-    languageName = "English"
-    [languages.en.menu]
-        [[languages.en.menu.main]]
-            url    = "/en/"
-            name   = "Home"
-            weight = 1
-        [[languages.en.menu.main]]
-            url    = "/en/projects"
-            name   = "Projects"
-            weight = 2
-        # [[languages.en.menu.main]]
-            # url    = "/en/contact/"
-            # name   = "Contact"
-            # weight = 3
-        # [[languages.en.menu.main]]
-            # url    = "/en/blog/"
-            # name   = "Blog"
-            # weight = 4
+   [languages.en]
+     weight = 1
+     languageName = "English"
 [params]
+    siteURL = "https://lukasmatuska.cz"
+    lang = "cs"
+    locale = "cs_CZ"
+    gatag = "293469174"
+    [taxonomies]
+        series = "series"
     [[params.links]]
         icon = "gitlab"
         title = "GitLab"
@@ -63,6 +35,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         title = "YouTube"
         url = "https://www.youtube.com/channel/UCUaaFvEgEyPT-oEoZpHJL4A"
     [[params.links]]
+        iconset = "fab"
+        icon = "spotify"
+        title = "Spotify"
+        url = "https://open.spotify.com/user/11126634413"
+    [[params.links]]
         icon = "twitter"
         title = "Twitter"
         url = "https://twitter.com/lukynmatuska"
@@ -79,3 +56,5 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         title = "Phone"
         iconset = "fas"
         url = "tel:604192783"
+[params.seo]
+    image = "/images/portrait.webp"

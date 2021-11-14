@@ -1,6 +1,10 @@
 ---
 title: Projects
 description: What I have done?
+menu:
+  main:
+    name: Projects
+    weight: 2
 ---
 
 ## Fairytale Forest

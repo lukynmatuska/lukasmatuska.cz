@@ -1,4 +1,16 @@
 <head>
+    <!-- Google Analytics -->
+    {{ if .Site.Params.googleAnalyticsId }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsId }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '{{ .Site.Params.googleAnalyticsId }}');
+    </script>
+    {{ end }}
+
+    <!-- encoding and browser config -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -21,6 +33,34 @@
         {{ .Title }} &middot; {{ .Site.Title }}
         {{- end }}
     </title>
+    <meta name="description" content="{{ .Params.seo.description }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta name="robots" content="{{ .Params.seo.robots }}">
+
+    <meta content="Lukáš Matuška, Matuška, Lukáš, Webovky, Webové stránky, programátor, webdev" name="keywords" />
+    <meta name="description" content="{{ .Description }}" />
+    {{ template "_internal/opengraph.html" . }}
+
+
+    <!-- SEO: twitter card -->
+    {{ if eq .Type "blog" }}
+    <meta name="twitter:card" content="summary_large_image">
+    {{ else }}
+    <meta name="twitter:card" content="summary">
+    {{ end }}
+    <meta name="twitter:title" content="{{ .Params.seo.title }}">
+    <meta name="twitter:description" content="{{ .Params.seo.description }}">
+    <meta name="twitter:site" content="@lukynmatuska">
+    {{ if .Params.seo.image }}
+    <meta name="twitter:image" content="{{ .Site.Params.cloudinaryPrefix }}{{ .Params.seo.image }}">
+    {{ end }}
+
+    <!-- SEO: translations -->
+    {{ if .IsTranslated }}
+    {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    {{ end }}
+    {{ end }}
 
     <!-- My CSS -->
     {{ $style := resources.Get "style.css" }}

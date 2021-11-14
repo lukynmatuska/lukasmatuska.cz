@@ -105,10 +105,8 @@ main.home h1, main.notfound h1 {
                                 supported by Chrome, Edge, Opera and Firefox */
 }
 
-@media only screen and (max-width: 600px) {
-  main.home p, main.notfound p {
-      max-width: 85%;
-  }
+p.home-description {
+  font-size: 100%;
 }
 
 main.home p, main.notfound p {
@@ -116,12 +114,12 @@ main.home p, main.notfound p {
   max-width: 75%;
   text-shadow: 2px 2px 5px #000;
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
 }
 
 main.notfound p {
@@ -134,10 +132,18 @@ main.home .links {
   text-shadow: 2px 2px 5px #000;
 }
 
+@media only screen and (max-width: 600px) {
+  main.home > .links {
+      max-width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
 main.home .links a,
 main.home .links span {
   color: #fff;
-  margin-right: .4rem;
+  /* margin-right: .4rem; */
 }
 
 main.home .links a:hover,

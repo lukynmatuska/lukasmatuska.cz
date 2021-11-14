@@ -1,6 +1,10 @@
 ---
 title: Projekty
 description: Co už mám za sebou?
+menu:
+  main:
+    name: Projekty
+    weight: 2
 ---
 
 ## Pohádkový les
