@@ -442,3 +442,15 @@ h2.c-bloglist__heading {
 .js-toggle:active .js-toggle-thumb {
   box-shadow: 0px 0px 5px 5px rgb(125, 226, 234);
 }
+
+img.snapcode {
+  width: 100%;
+  max-width: 25vw;
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+  img.snapcode {
+    max-width: 75vw;
+  }
+}

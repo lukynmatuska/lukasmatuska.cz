@@ -69,6 +69,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         title = "Discord"
         url = "./discord"
     [[params.links]]
+        icon = "snapchat"
+        title = "Snapchat"
+        url = "./snapchat"
+    [[params.links]]
         icon = "phone"
         title = "Phone"
         iconset = "fas"
