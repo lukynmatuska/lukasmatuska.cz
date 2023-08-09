@@ -35,6 +35,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         title = "E-mail"
         url = "mailto:matuska.lukas@lukasmatuska.cz"
     [[params.links]]
+        icon = "linkedin"
+        title = "LinkedIn"
+        url = "https://www.linkedin.com/in/lukasmatuskacz/"
+    [[params.links]]
         icon = "youtube"
         title = "YouTube"
         url = "https://www.youtube.com/channel/UCUaaFvEgEyPT-oEoZpHJL4A"
