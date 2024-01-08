@@ -1,13 +1,17 @@
 {{ define "main" }}
 <main class="home">
     <h1>{{ .Params.hero.heading | safeHTML }}</h1>
-    <p class="home-description">{{ .Params.hero.subheading | safeHTML }}</p>
+    {{/*  <p class="description">{{ .Params.hero.subheading | safeHTML }}</p>  */}}
     <div class="text-center links">
         {{ range .Site.Params.links }}
         <a href="{{ .url | safeURL }}" target="_blank" title="{{ .title }}"><i class="{{ .iconset | default " fab" }}
                 {{.iconorigin | default "fa" }}-{{ .icon }}"></i></a>
         {{ end }}
     </div>
-    <div class="placeholder"></div>
+    <div class="placeholder">
+        <span>
+            Photo by @proste.vodro
+        </span>
+    </div>
 </main>
 {{ end }}
