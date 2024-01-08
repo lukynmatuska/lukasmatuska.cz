@@ -23,4 +23,8 @@ switcher.addEventListener("click", function () {
 if (localStorage.getItem('darkMode')) {
     switcher.classList.add('js-toggle--checked');
     body.classList.add('dark');
+} else if (!localStorage.getItem('darkMode')) {
+    switcher.classList.remove('js-toggle--checked');
+    body.classList.remove('dark');
+    body.classList.add('light');
 }
