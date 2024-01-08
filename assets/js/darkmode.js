@@ -16,16 +16,16 @@ switcher.addEventListener("click", function () {
         body.classList.remove('dark');
         body.classList.add('light');
         setTimeout(function () {
-            localStorage.removeItem('darkMode');
+            localStorage.setItem('darkMode', 'false');
         }, 100);
     }
 })
 
 // Check Storage. Keep user preference on page reload
-if (localStorage.getItem('darkMode')) {
+if (localStorage.getItem('darkMode') == 'true' || localStorage.getItem('darkMode') == null) {
     switcher.classList.add('js-toggle--checked');
     body.classList.add('dark');
-} else if (!localStorage.getItem('darkMode')) {
+} else if (localStorage.getItem('darkMode') == 'false') {
     switcher.classList.remove('js-toggle--checked');
     body.classList.remove('dark');
     body.classList.add('light');
