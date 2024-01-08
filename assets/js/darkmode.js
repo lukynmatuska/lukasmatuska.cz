@@ -8,11 +8,13 @@ switcher.addEventListener("click", function () {
     this.classList.add('js-toggle--focus');
     // If dark mode is selected
     if (this.classList.contains('js-toggle--checked')) {
+        body.classList.remove('light');
         body.classList.add('dark');
         // Save user preference in storage
         localStorage.setItem('darkMode', 'true');
     } else {
         body.classList.remove('dark');
+        body.classList.add('light');
         setTimeout(function () {
             localStorage.removeItem('darkMode');
         }, 100);

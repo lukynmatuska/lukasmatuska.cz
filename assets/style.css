@@ -17,6 +17,11 @@ body.dark {
   color: #fff;
 }
 
+body.light {
+  background-color: white;
+  color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,6 +90,7 @@ main.notfound {
 
 main.home {
   display: grid;
+  color: black;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 2fr auto 1fr 1fr;
   grid-template-areas:
@@ -120,7 +126,12 @@ main.home .placeholder {
 @media only screen and (max-width: 900px) {
   main.home {
     display: flex;
+    color: #fff;
     background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.65) 59%), url(/images/portrait.webp) top center;
+  }
+
+  main.home .placeholder {
+    display: none;
   }
 }
 
@@ -188,10 +199,6 @@ main.home .links {
     max-width: 55%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  main.home .placeholder {
-    display: none;
   }
 }
 
