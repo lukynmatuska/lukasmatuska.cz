@@ -64,11 +64,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         title = "Steam"
         url = "https://steamcommunity.com/profiles/76561198126079003"
     [[params.links]]
-        iconset = "fas"
-        icon = "graduation-cap"
-        title = "VUT"
-        url = "https://www.vut.cz/lide/lukas-matuska-242174"
-    [[params.links]]
         icon = "discord"
         title = "Discord"
         url = "./discord"
