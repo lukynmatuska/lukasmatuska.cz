@@ -1,19 +1,7 @@
 {
-	"name": "Hugo (Community)",
+	"name": "Hugo",
 	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			// Update VARIANT to pick hugo variant.
-			// Example variants: hugo, hugo_extended
-			// Rebuild the container if it already exists to update.
-			"VARIANT": "hugo",
-			// Update VERSION to pick a specific hugo version.
-			// Example versions: latest, 0.73.0, 0,71.1
-			// Rebuild the container if it already exists to update.
-			"VERSION": "latest",
-			// Update NODE_VERSION to pick the Node.js version: 12, 14
-			"NODE_VERSION": "14"
-		}
+		"dockerfile": "Dockerfile"
 	},
 
 	// Configure tool-specific properties.
@@ -27,8 +15,14 @@
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
+				"rusnasonov.vscode-hugo",
+				"budparr.language-hugo-vscode",
+				"eliostruyf.vscode-hugo-themer",
+				"akmittal.hugofy",
+				"kaellarkin.hugo-shortcode-syntax",
 				"bungcip.better-toml",
-				"davidanson.vscode-markdownlint"
+				"davidanson.vscode-markdownlint",
+				"eamodio.gitlens"
 			]
 		}
 	},
@@ -36,14 +30,5 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		1313
-	],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
-
-	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node",
-	"features": {
-		"ghcr.io/devcontainers/features/hugo:1": {}
-	}
+	]
 }
