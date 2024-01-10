@@ -63,7 +63,7 @@
     {{ end }}
 
     <!-- My CSS -->
-    {{ $style := resources.Get "style.css" }}
+    {{ $style := resources.Get "style.scss" | toCSS }}
     {{ $style = $style | minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
