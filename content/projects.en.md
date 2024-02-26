@@ -26,3 +26,10 @@ The aim of this project was to control traffic lights in the city using artifici
 ## Burning witches
 
 My first web application ever, which I started making at the beginning of my second year of study at [Purkyňka](https://www.sspbrno.cz/). It helped me process songs on request from people in the audience at the Burning of Witches in Rudice, where I was in charge of providing the sound for this event. [GitHub](https://github.com/lukynmatuska/CarodkyRC)
+
+## Pneumobil Racing Team Brno
+
+There is a student team at [FSI BUT](https://www.fme.vutbr.cz/en/) that develops air-powered vehicles.
+I designed a static website for them exactly according to their requirements.
+The source codes can be viewed [here](https://github.com/lukynmatuska/pneumobilteam.cz).
+The web presentation itself can be found on the [pneumobilteam.cz](https://pneumobilteam.cz/) domain.

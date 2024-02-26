@@ -26,3 +26,10 @@ Cílem tohoto projektu bylo ovládat semafory ve městě pomocí umělé intelig
 ## Pálení čarodějnic
 
 Moje první webová aplikace vůbec, kterou jsem začal dělat na začátku mého druhého ročníku studia na [Purkyňce](https://www.sspbrno.cz/). Pomáhala mi při zpracování písniček na přání od lidí z publika na Pálení čarodějnic v Rudici, kde jsem měl na starosti zajištění ozvučení této akce. [Více zde](https://github.com/lukynmatuska/CarodkyRC)
+
+## Pneumobil Racing Team Brno
+
+Na [FSI VUT v&nbsp;Brně](https://www.fme.vutbr.cz/) je studentský tým, který vyvíjí vozidla poháněná vzduchem.
+Já jsem pro ně navrhnul statické webové stránky přesně podle jejich požadavků.
+Zdrojové kódy jsou k&nbsp;prohlédnutí [zde](https://github.com/lukynmatuska/pneumobilteam.cz).
+Samotnou webovou prezentaci pak najdete na&nbsp;doméně [pneumobilteam.cz](https://pneumobilteam.cz/).
