@@ -9,6 +9,11 @@
 	status = 404
 
 [[redirects]]
+	from = "/cms"
+	to = "https://drive.google.com/drive/folders/1fJH6JeCJOgAXXptIpNhKSd1XeBnWogId"
+	status = 301
+
+[[redirects]]
 	from = "/*"
 	to = "/en/404/"
 	status = 404
