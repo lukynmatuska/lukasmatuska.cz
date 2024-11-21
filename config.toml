@@ -75,6 +75,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         icon = "phone"
         title = "Phone"
         iconset = "fas"
-        url = "tel:604192783"
+        url = "tel:+420604192783"
 [params.seo]
     image = "/images/portrait.webp"
