@@ -18,7 +18,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     siteURL = "https://lukasmatuska.cz"
     lang = "cs"
     locale = "cs_CZ"
-    gatag = "293469174"
     [taxonomies]
         series = "series"
     [[params.links]]
@@ -78,3 +77,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         url = "tel:+420604192783"
 [params.seo]
     image = "/images/portrait.webp"
+[services]
+  [services.googleAnalytics]
+    id = "G-36D3Q4516S"

@@ -1,15 +1,4 @@
 <head>
-    <!-- Google Analytics -->
-    {{ if .Site.Params.googleAnalyticsId }}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsId }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', '{{ .Site.Params.googleAnalyticsId }}');
-    </script>
-    {{ end }}
-
     <!-- encoding and browser config -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +14,8 @@
     {{- else if .Description }}
     <meta name="description" content="{{ .Description }}">
     {{- end }}
+
+    {{ template "_internal/google_analytics.html" . }}
 
     <title>
         {{- if .IsHome }}
