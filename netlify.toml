@@ -9,6 +9,16 @@
 	status = 404
 
 [[redirects]]
+	from = "/cw"
+	to = "https://forms.gle/mJKe6p8bceVGXyge8"
+	status = 301
+
+[[redirects]]
+	from = "/cardas"
+	to = "https://forms.gle/mJKe6p8bceVGXyge8"
+	status = 301
+
+[[redirects]]
 	from = "/cms"
 	to = "https://drive.google.com/drive/folders/1fJH6JeCJOgAXXptIpNhKSd1XeBnWogId"
 	status = 301
