@@ -2,7 +2,7 @@ baseURL = "https://lukasmatuska.cz"
 defaultContentLanguage = "cs"
 defaultContentLanguageInSubdir = true
 title = "Lukáš Matuška"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 [languages]
   [languages.cs]
     weight = 1

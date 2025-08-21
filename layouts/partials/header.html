@@ -11,7 +11,7 @@
             {{- end }}
         </ul>
     </nav>
-    {{ if .Site.IsMultiLingual }}
+    {{ if hugo.IsMultilingual }}
     <nav class="o-nav language-nav">
         <ul class="o-nav__list">
             {{ range $.Site.Home.AllTranslations }}
