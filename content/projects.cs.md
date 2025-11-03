@@ -14,7 +14,7 @@ Byl zde problém s&nbsp;přeplněním začátku akce, kdy se na vstupu do našeh
 
 ## Mikulášské odpoledne
 
-Další aplikace, kterou jsem vytvořil v&nbsp;[Node.js](https://nodejs.org/) a&nbsp;[MongoDB](https://www.mongodb.com/) je také pro spolek jménem [Rudická mládež](https://rudickamladez.cz).
+Další aplikace, kterou jsem vytvořil v&nbsp;[Node.js](https://nodejs.org/) a&nbsp;[MongoDB](https://www.mongodb.com/) je také pro spolek [Rudická mládež](https://rudickamladez.cz).
 Vyřešil jsem vytížení pořadatelů, protože dříve bylo objednání dětí na tuto malou vesnickou akci možné  telefonicky, či na emailu.
 Vše řešila moje webová aplikace, která již není v&nbsp;provozu, protože klesl zájem o&nbsp;tuto akci.
 
