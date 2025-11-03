@@ -13,7 +13,9 @@ Moje první webová aplikace v [Node.js](https://nodejs.org/) a [MongoDB](https:
 
 ## Mikulášské odpoledne
 
-Další aplikace, kterou jsem vytvořil v [Node.js](https://nodejs.org/) a [MongoDB](https://www.mongodb.com/) je také pro spolek jménem [Rudická mládež](https://rudickamladez.cz). Vyřešil jsem vytížení pořadatelů, protože dříve bylo objednání dětí na tuto malou vesnickou akci možné  telefonicky, či na emailu. Teď vše řeší moje webová aplikace. [Oficiální web Mikulášského odpoledne](https://mikulas.rudickamladez.cz/)
+Další aplikace, kterou jsem vytvořil v&nbsp;[Node.js](https://nodejs.org/) a&nbsp;[MongoDB](https://www.mongodb.com/) je také pro spolek jménem [Rudická mládež](https://rudickamladez.cz).
+Vyřešil jsem vytížení pořadatelů, protože dříve bylo objednání dětí na tuto malou vesnickou akci možné  telefonicky, či na emailu.
+Vše řešila moje webová aplikace, která již není v&nbsp;provozu, protože klesl zájem o&nbsp;tuto akci.
 
 ## Správa týmových prací
 
