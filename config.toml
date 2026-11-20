@@ -21,10 +21,6 @@ disableKinds = ["taxonomy"]
     [taxonomies]
         series = "series"
     [[params.links]]
-        icon = "gitlab"
-        title = "GitLab"
-        url = "https://gitlab.com/matuska.lukas/"
-    [[params.links]]
         icon = "github"
         title = "GitHub"
         url = "https://github.com/lukynmatuska/"
@@ -47,10 +43,6 @@ disableKinds = ["taxonomy"]
         title = "Spotify"
         url = "https://open.spotify.com/user/11126634413"
     [[params.links]]
-        icon = "twitter"
-        title = "Twitter"
-        url = "https://twitter.com/lukasmatuskacz"
-    [[params.links]]
         icon = "instagram"
         title = "Instagram"
         url = "https://instagram.com/lukasmatuska.cz"
@@ -59,17 +51,9 @@ disableKinds = ["taxonomy"]
         title = "Facebook"
         url = "https://www.facebook.com/lukasmatuska.cz"
     [[params.links]]
-        icon = "steam"
-        title = "Steam"
-        url = "https://steamcommunity.com/profiles/76561198126079003"
-    [[params.links]]
         icon = "discord"
         title = "Discord"
         url = "./discord"
-    [[params.links]]
-        icon = "snapchat"
-        title = "Snapchat"
-        url = "./snapchat"
     [[params.links]]
         icon = "phone"
         title = "Phone"
